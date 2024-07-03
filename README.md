@@ -1,1 +1,1 @@
-First Readme
+URL for live website : https://revou-fundamental-course.github.io/fundamental-pecopero/
