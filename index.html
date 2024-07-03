@@ -9,20 +9,37 @@
 <body>
     <header class="header">
         <img src="images/revou-logo.svg" alt="Logo">
-        <nav class="nav">
+        <nav class="nav-links">
             <a href="#">Home</a>
-            <a href="https://revou.co/culture">Our Profile</a>
+            <a href="#">Our Profile</a>
             <a href="#">Portfolio</a>
-            <a href="#messageUs">Message Us</a>
+            <a href="#">Message Us</a>
         </nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </header>
     <div class="container">
         <div class="welcome">
             <h1><span id="infoName2"></span> Welcome To Website</h1>
             <p>Ini adalah website latihan pertama</p>
         </div>
-        <div class="banner">
-            <img src="images/banner.jpg" alt="Banner Image">
+        <div class="banner-slider">
+            <div class="slide active">
+                <img src="images/banner.jpg" alt="BannerImage">
+            </div>
+            <div class="slide">
+                <img src="images/banner2.jpg" alt="BannerImage2">
+            </div>
+            <div class="slide">
+                <img src="images/banner3.jpg" alt="BannerImage3">
+            </div>
+            <div class="controls">
+                <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+                <span class="next" onclick="changeSlide(1)">&#10095;</span>
+            </div>
         </div>
         <div class="our-headquarter">
             <h2>Our Headquarter</h2>
