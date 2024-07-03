@@ -15,36 +15,73 @@ body {
 .header img {
     height: 50px;
 }
-.nav {
+.nav-links {
     display: flex;
     border: solid 0.5px #000;
 }
-.nav a {
+.nav-links a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     padding: 5px 25px;
     border: solid 0.5px #000;
 }
-.nav a:hover {
+.nav-links a:hover {
     background: #ffde3d;
-    color: #FFF;
 }
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: #FFF;
+    background: #ffde3d;
 }
 .welcome {
     text-align: center;
     padding: 5px 15px;
     background: #ffde3d;
 }
-.banner {
-    padding: 0px 15px;
-    text-align: center;
+.banner-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    overflow: hidden;
+    max-height: 578px;
 }
-.banner img {
+.slide {
+    display: none;
+}
+.slide img {
+    width: 100%;
+}
+.active {
+    display: block;
+}
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+.controls .prev,
+.controls .next {
+    pointer-events: all;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+.controls .prev:hover,
+.controls .next:hover {
+    pointer-events: all;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(165, 165, 165, 0.5);
+    color: rgb(0, 0, 0);
+}
+.banner-slider img {
     max-width: 1366px;
     max-height: 578px;
     width: 100%;
@@ -53,11 +90,7 @@ body {
 .our-headquarter {
     text-align: center;
     padding: 5px 15px;
-    border: solid 1px #000;
-    border-left: 0;
-    border-right: 0;
 }
-
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -122,14 +155,27 @@ h2 {
 .radio-group {
     margin-bottom: 10px;
 }
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
 @media only screen and (max-width: 500px) {
-    body .nav a {
-        padding: 0px 5px;
-        font-size: 14px;
+    body .nav-links a {
+        padding: 10px 15px;
+        font-size: 16px;
+        z-index: 1;
+        background: #fff;
     }
 }
 @media only screen and (max-width: 768px) {
-    .nav a {
+    .nav-links a {
         padding: 5px 15px;
     }
     .message-us {
@@ -140,5 +186,39 @@ h2 {
     }
     .message-us form {
         width: auto;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: white;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 }
