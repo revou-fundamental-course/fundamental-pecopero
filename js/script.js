@@ -1,4 +1,4 @@
-// Form Submit
+// Form Submit Start
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting in the traditional way
 
@@ -16,8 +16,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const currentTime = new Date().toLocaleString();
     document.getElementById('currentTime').innerText = currentTime;
 });
+// Form Submit End
 
-// Burger Menu Mobile
+// Burger Menu Mobile Start
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 
@@ -25,7 +26,9 @@ burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
     burger.classList.toggle('toggle');
 });
+// Burger Menu Mobile End
 
+// Banner Slider Start
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
@@ -38,7 +41,6 @@ function showSlide(index) {
     });
 }
 
-// Banner Slider
 function changeSlide(direction) {
     currentSlide += direction;
     if (currentSlide >= slides.length) {
@@ -54,5 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
     setInterval(() => {
         changeSlide(1);
-    }, 15000); // Change slide every 5 seconds
+    }, 15000); // Change slide every 15 seconds
 });
+// Banner Slider End

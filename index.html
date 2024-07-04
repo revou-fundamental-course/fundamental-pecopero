@@ -1,82 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Learning Website</title>
+    <!-- Link to CSS stylesheet -->
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header class="header">
+        <!-- Logo Image -->
         <img src="images/revou-logo.svg" alt="Logo">
+        <!-- Navigation Links -->
         <nav class="nav-links">
             <a href="#">Home</a>
-            <a href="#">Our Profile</a>
+            <a href="pages/myprofile.html">Our Profile</a>
             <a href="#">Portfolio</a>
             <a href="#">Message Us</a>
         </nav>
+        <!-- Burger Menu for Mobile View -->
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </header>
-    <div class="container">
-        <div class="welcome">
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Welcome Section -->
+        <section class="welcome">
             <h1><span id="infoName2"></span> Welcome To Website</h1>
             <p>Ini adalah website latihan pertama</p>
-        </div>
-        <div class="banner-slider">
+        </section>
+
+        <!-- Banner Slider Section -->
+        <section class="banner-slider">
+            <!-- Slide 1 -->
             <div class="slide active">
                 <img src="images/banner.jpg" alt="BannerImage">
             </div>
+            <!-- Slide 2 -->
             <div class="slide">
                 <img src="images/banner2.jpg" alt="BannerImage2">
             </div>
+            <!-- Slide 3 -->
             <div class="slide">
                 <img src="images/banner3.jpg" alt="BannerImage3">
             </div>
+            <!-- Slider Controls -->
             <div class="controls">
                 <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
                 <span class="next" onclick="changeSlide(1)">&#10095;</span>
             </div>
-        </div>
-        <div class="our-headquarter">
+        </section>
+
+        <!-- Our Headquarter Section -->
+        <section class="our-headquarter">
             <h2>Our Headquarter</h2>
+            <!-- City: Jakarta -->
             <div class="city">
                 <div class="circle"></div>
                 <p>Jakarta</p>
             </div>
+            <!-- City: Bandung -->
             <div class="city">
                 <div class="circle"></div>
                 <p>Bandung</p>
             </div>
+            <!-- City: Surabaya -->
             <div class="city">
                 <div class="circle"></div>
                 <p>Surabaya</p>
             </div>
-        </div>
-        <div class="messageUsContainer">
-            <div class="messageUsTitle">
+        </section>
+
+        <!-- Message Us Section -->
+        <section class="messageUsContainer">
+            <header class="messageUsTitle">
                 <h2>Message Us</h2>
-            </div>
+            </header>
             <div class="message-us" id="messageUs">
+                <!-- Contact Form -->
                 <form id="contactForm">
                     <label for="name">Nama:</label>
                     <input type="text" id="name" name="name" required>
                     <label for="birthdate">Tanggal Lahir:</label>
                     <input type="date" id="birthdate" name="birthdate" required>
-                    <div class="radio-group">
-                        <label for="gender">Jenis Kelamin:</label>
+                    <fieldset class="radio-group">
+                        <legend>Jenis Kelamin:</legend>
                         <input type="radio" id="male" name="gender" value="Laki-Laki" required>
                         <label for="male">Laki-Laki</label>
                         <input type="radio" id="female" name="gender" value="Perempuan" required>
                         <label for="female">Perempuan</label>
-                    </div>
+                    </fieldset>
                     <label for="message">Pesan:</label>
                     <textarea id="message" name="message" required></textarea>
                     <button type="submit">Submit</button>
                 </form>
+                <!-- Information Display Section -->
                 <div class="info">
                     <p>Current time : <span id="currentTime"></span></p>
                     <p>Nama : <span id="infoName"></span></p>
@@ -85,11 +109,14 @@
                     <p>Pesan : <span id="infoMessage"></span></p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
     <footer class="footer">
-        Created By RevoU
+        Created By RevoU - Peco
     </footer>
+    <!-- Link to JavaScript file -->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Djajusman Adi - Front End Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header, .section {
+            margin-bottom: 20px;
+            text-align: justify;
+            padding: 5px 15px;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #d4af37;
+            font-weight: 700;
+        }
+        h1 {
+            color: #d4af37; /* Golden color */
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #333;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-info p {
+            margin: 2px 0;
+        }
+        .skills, .tools, .others {
+            display: flex;
+            justify-content: space-between;
+        }
+        .skills div, .tools div, .others div {
+            flex: 1;
+            padding: 5px;
+        }
+        .skills div p, .tools div p, .others div p {
+            margin: 5px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #d4af37;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+        }
+        .back-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .back-button a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #d4af37;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>IVAN DJAJUSMAN ADI</h1>
+            <p>FRONT END DEVELOPER</p>
+            <div class="contact-info">
+                <address>Perum Sinar Soto Sawah C6</address>
+                <p>081215326751</p>
+                <a href="mailto:ivan.d.adi.93@gmail.com">ivan.d.adi.93@gmail.com</a>
+            </div>
+        </header>
+
+        <!-- Profile Summary Section -->
+        <section class="section">
+            <h2>PROFILE SUMMARY</h2>
+            <p>Detail-oriented and passionate Front-End Developer with 5 years of experience in implementing responsive, user-friendly web applications. Proficient in HTML, CSS, JavaScript, and modern frameworks such as React and Tailwind.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2>SKILLS</h2>
+            <div class="skills">
+                <div>
+                    <p class="section-title">LANGUAGES:</p>
+                    <p>HTML</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <p class="section-title">FRAMEWORKS:</p>
+                    <p>jQuery</p>
+                    <p>Tailwind</p>
+                    <p>React</p>
+                </div>
+            </div>
+            <div class="tools">
+                <div>
+                    <p class="section-title">DESIGN:</p>
+                    <p>Adobe XD</p>
+                    <p>Photoshop</p>
+                    <p>Figma</p>
+                </div>
+                <div>
+                    <p class="section-title">TOOLS:</p>
+                    <p>Git</p>
+                    <p>LESS</p>
+                </div>
+            </div>
+            <div class="others">
+                <div>
+                    <p class="section-title">OTHERS:</p>
+                    <p>Responsive Design</p>
+                    <p>SEO Best Practices</p>
+                    <p>Selenium Testing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2>EDUCATION</h2>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>Christian Duta Wacana University, DI Yogyakarta</p>
+            <time>2012 - 2017</time>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="section">
+            <h2>WORK EXPERIENCE</h2>
+            <h3>Front End Developer / Associate Software Engineer</h3>
+            <p>Sirclo, Tangerang</p>
+            <time>January, 2019 - June, 2024</time>
+            <ul>
+                <li>Developed and maintained web pages using HTML, CSS, and JavaScript, ensuring cross-browser compatibility.</li>
+                <li>Collaborated with designers to translate wireframes and mockups into interactive, responsive web pages.</li>
+                <li>Optimized web applications for maximum speed and scalability.</li>
+                <li>Developed base code for a new product using Hyvä.</li>
+                <li>Created automation robot testing using Selenium.</li>
+            </ul>
+        </section>
+    </div>
+    <!-- Back to Index Button -->
+    <div class="back-button">
+        <a href="../index.html">Back to Index</a>
+    </div>
+</body>
+</html>
